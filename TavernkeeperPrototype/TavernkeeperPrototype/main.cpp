@@ -1,10 +1,16 @@
 #include <SFML/Graphics.hpp>
+#include "Drink.h"
+#include "DrinkCard.h"
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
+	sf::RenderWindow window(sf::VideoMode(800, 800), "SFML works!");
+	Drink* testDrink = new Drink();
+	string testArray[2];
+	testArray[0] = "test1";
+	testArray[1] = "test2";
+	std::cout << to_string(testArray->length()); //testArray->length;
+	DrinkCard testCard("ayy", "lmao", testArray);
 
 	while (window.isOpen())
 	{
@@ -15,8 +21,8 @@ int main()
 				window.close();
 		}
 
-		window.clear();
-		window.draw(shape);
+		window.clear(sf::Color::White);
+		testDrink->render(&window);
 		window.display();
 	}
 
