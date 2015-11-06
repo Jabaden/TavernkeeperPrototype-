@@ -24,12 +24,18 @@
     <ClCompile Include="DrinkCard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DrinkDeck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Drink.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DrinkCard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrinkDeck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

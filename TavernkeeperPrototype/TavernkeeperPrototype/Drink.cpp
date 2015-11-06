@@ -1,7 +1,7 @@
 #include "Drink.h"
 #include <iostream>
 Drink::Drink(){
-	std::cout << "test";
+	//std::cout << "test";
 	drinkSprite = new sf::Sprite();
 	drinkTexture = new sf::Texture();
 	drinkTexture->loadFromFile("ScaryFace-2.png");
