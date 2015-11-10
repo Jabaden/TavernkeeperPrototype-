@@ -1,4 +1,5 @@
 #Name		#Type		#Flavors	 
 &Fireball &Mixed &Spicy Strong
 &FOW &Mixed &Strong Sweet
-&Whiskey &Liquor &Strong
+&Whiskey &Liquor &Strong Strong
+&Ale &Boozey &Smooth Smooth

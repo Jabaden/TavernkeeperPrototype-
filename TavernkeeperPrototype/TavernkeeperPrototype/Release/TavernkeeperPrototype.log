@@ -1,13 +1,15 @@
-﻿Build started 11/5/2015 10:36:11 PM.
+﻿Build started 11/10/2015 8:50:30 AM.
      1>Project "C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\TavernkeeperPrototype\TavernkeeperPrototype.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Andy\Desktop\UCSC\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D SFML_STATIC /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DrinkCard.cpp
-         DrinkCard.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Andy\Desktop\UCSC\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D SFML_STATIC /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\Release\TavernkeeperPrototype.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\Andy\Desktop\UCSC\SFML-2.3.2\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "sfml-graphics-s.lib" "sfml-window-s.lib" "sfml-system-s.lib" opengl32.lib freetype.lib jpeg.lib winmm.lib gdi32.lib flac.lib vorbisenc.lib vorbisfile.lib vorbis.lib ogg.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\Release\TavernkeeperPrototype.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\Release\TavernkeeperPrototype.lib" /MACHINE:X86 /SAFESEH Release\Drink.obj
          Release\DrinkCard.obj
          Release\DrinkDeck.obj
+         Release\DrinkSelector.obj
          Release\main.obj
+         Release\ToolSelector.obj
          Generating code
          Finished generating code
          TavernkeeperPrototype.vcxproj -> C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\Release\TavernkeeperPrototype.exe
@@ -15,4 +17,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.47
+Time Elapsed 00:00:05.78

@@ -59,9 +59,9 @@ DrinkDeck::DrinkDeck(){
 			dFlavorArray[1] = dFlavorTwo;
 
 			DrinkCard* tempCard = new DrinkCard(dName, dType, dFlavorArray);
-			deckOfDrinks->push_back(*tempCard);
+			deckOfDrinks->push_back(tempCard);
 			//cout << "Your drink is called " << dName << ". it is a " << dType << " drink. It is " << dFlavorOne << " and " << dFlavorTwo << endl;
-			cout << to_string(deckOfDrinks->size()) << endl;
+			//cout << to_string(deckOfDrinks->size()) << endl;
 		}
 		file.close();
 	}
@@ -71,8 +71,13 @@ DrinkDeck::dVec* DrinkDeck::getDeck(){
 	return this->deckOfDrinks;
 }
 
-DrinkCard DrinkDeck::drawCard(){
-	DrinkCard card = deckOfDrinks->back();
+DrinkCard* DrinkDeck::drawCard(){
+	//this->shuffleDeck();
+	DrinkCard* card = deckOfDrinks->back();
+	card->pickRandomAttribute();
+	//cout << " Inside draw card" << endl;
+	card->printCard();
+	card->describeOrder();
 	deckOfDrinks->pop_back();
 	return card;
 }
@@ -83,7 +88,8 @@ void DrinkDeck::shuffleDeck(){
 
 void DrinkDeck::printDeck(){
 	for (auto iter = this->deckOfDrinks->begin(); iter != this->deckOfDrinks->end(); iter++){
-		iter->printCard();
+		(*iter)->printCard();
 	}
 }
+
 

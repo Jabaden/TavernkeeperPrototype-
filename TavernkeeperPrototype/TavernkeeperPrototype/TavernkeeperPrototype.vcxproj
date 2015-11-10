@@ -86,12 +86,17 @@
     <ClCompile Include="Drink.cpp" />
     <ClCompile Include="DrinkCard.cpp" />
     <ClCompile Include="DrinkDeck.cpp" />
+    <ClCompile Include="DrinkSelector.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ToolSelector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Drink.h" />
     <ClInclude Include="DrinkCard.h" />
     <ClInclude Include="DrinkDeck.h" />
+    <ClInclude Include="DrinkSelector.h" />
+    <ClInclude Include="GameVariables.h" />
+    <ClInclude Include="ToolSelector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

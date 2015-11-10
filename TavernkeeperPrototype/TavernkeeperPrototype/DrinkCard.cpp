@@ -20,13 +20,15 @@ void DrinkCard::drinkCardTest(){
 
 void DrinkCard::printCard(){
 	cout << "Name: " << this->name << ". Type: " << this->type << ". Flavors: " << this->flavorArray[0] << ", " << this->flavorArray[1] << endl;
-	cout << "inside printCard()" << endl;
+	//cout << "inside printCard()" << endl;
 }
 
 void DrinkCard::pickRandomAttribute(){
 	int random = rand() % 3;
-	cout << to_string(random);
+	cout << to_string(random) << endl;
 	this->chooseAttribute(random);
+	this->printCAV();
+
 	//TODO
 }
 
@@ -47,5 +49,45 @@ void DrinkCard::chooseAttribute(int attribute){
 		this->chosenAttributeVector->at(1) = false;
 		this->chosenAttributeVector->at(2) = true;
 		break;
+	}
+}
+
+//TODO this will print to console and display what the order is!
+void DrinkCard::orderUp(){
+
+}
+
+void DrinkCard::printCAV(){
+	for (auto iter = this->chosenAttributeVector->begin(); iter != this->chosenAttributeVector->end(); iter++){
+		if ((*iter)){
+			cout << "1 ";
+		}
+		else {
+			cout << "0 ";
+		}
+	}
+}
+
+void DrinkCard::describeOrder(){
+	int i = 0;
+	for (auto iter = this->chosenAttributeVector->begin(); iter != this->chosenAttributeVector->end(); iter++){
+		if ((*iter) && i == 0){
+			cout << "Get me a " << this->name << "!" << endl;
+			return;
+		}
+		else if ((*iter) && i == 1){
+			cout << "Get me a " << this->type << " Drink!" << endl;
+			return;
+		}
+		else if ((*iter) && i == 2){
+			if (this->flavorArray[0] == this->flavorArray[1]){
+				cout << "Get me a " << this->flavorArray[0] << " drink!" << endl;
+			}
+			else{
+				cout << "Get me a " << this->flavorArray[0] << " or a " << this->flavorArray[1] << " drink!" << endl;
+			}
+			return;
+		}
+		i++;
 	}
 }

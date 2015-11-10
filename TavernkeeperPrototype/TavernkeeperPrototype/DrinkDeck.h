@@ -9,12 +9,12 @@
 using namespace std;
 class DrinkDeck{
 private:
-	typedef std::vector<DrinkCard> dVec;
+	typedef std::vector<DrinkCard*> dVec;
 	dVec* deckOfDrinks;
 public:
 	DrinkDeck();
 	dVec* getDeck();
-	DrinkCard drawCard();
+	DrinkCard* drawCard();
 	void shuffleDeck();
 	void printDeck();
-};
+}; 

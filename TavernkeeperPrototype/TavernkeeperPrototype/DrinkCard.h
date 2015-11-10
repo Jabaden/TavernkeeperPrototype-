@@ -19,6 +19,9 @@ public:
 	void drinkCardTest();
 	void pickRandomAttribute();
 	void chooseAttribute(int attribute);
+	void orderUp();
+	void describeOrder();
+	void printCAV();
 };
 
 

@@ -1,13 +1,37 @@
-﻿Build started 11/3/2015 4:19:04 PM.
-     1>Project "D:\Users\Andy\Desktop\cpp projects\TavernkeeperPrototype\TavernkeeperPrototype\TavernkeeperPrototype.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         D:\Program Files (x86)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
-       Link:
-         D:\Program Files (x86)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Andy\Desktop\cpp projects\TavernkeeperPrototype\Debug\TavernkeeperPrototype.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\Andy\Desktop\cpp projects\TavernkeeperPrototype\Debug\TavernkeeperPrototype.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Andy\Desktop\cpp projects\TavernkeeperPrototype\Debug\TavernkeeperPrototype.lib" /MACHINE:X86 Debug\main.obj
-         TavernkeeperPrototype.vcxproj -> D:\Users\Andy\Desktop\cpp projects\TavernkeeperPrototype\Debug\TavernkeeperPrototype.exe
-     1>Done Building Project "D:\Users\Andy\Desktop\cpp projects\TavernkeeperPrototype\TavernkeeperPrototype\TavernkeeperPrototype.vcxproj" (Build target(s)).
+﻿Build started 11/10/2015 8:34:39 AM.
+     1>Project "C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\TavernkeeperPrototype\TavernkeeperPrototype.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\Debug\TavernkeeperPrototype.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Andy\Desktop\UCSC\SFML-2.3.2\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\Debug\TavernkeeperPrototype.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\Debug\TavernkeeperPrototype.lib" /MACHINE:X86 Debug\Drink.obj
+         Debug\DrinkCard.obj
+         Debug\DrinkDeck.obj
+         Debug\DrinkSelector.obj
+         Debug\main.obj
+         Debug\ToolSelector.obj
+     1>Drink.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(float,float)" (?setPosition@Transformable@sf@@QAEXMM@Z) referenced in function "public: __thiscall Drink::Drink(int,int)" (??0Drink@@QAE@HH@Z)
+     1>Drink.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Transformable::setScale(float,float)" (?setScale@Transformable@sf@@QAEXMM@Z) referenced in function "public: __thiscall Drink::Drink(int,int)" (??0Drink@@QAE@HH@Z)
+     1>Drink.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::Texture::Texture(void)" (??0Texture@sf@@QAE@XZ) referenced in function "public: __thiscall Drink::Drink(int,int)" (??0Drink@@QAE@HH@Z)
+     1>Drink.obj : error LNK2019: unresolved external symbol "public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z) referenced in function "public: __thiscall Drink::Drink(int,int)" (??0Drink@@QAE@HH@Z)
+     1>Drink.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z) referenced in function "public: void __thiscall Drink::render(class sf::RenderWindow *)" (?render@Drink@@QAEXPAVRenderWindow@sf@@@Z)
+     1>Drink.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::Sprite::Sprite(void)" (??0Sprite@sf@@QAE@XZ) referenced in function "public: __thiscall Drink::Drink(int,int)" (??0Drink@@QAE@HH@Z)
+     1>Drink.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z) referenced in function "public: __thiscall Drink::Drink(int,int)" (??0Drink@@QAE@HH@Z)
+     1>Drink.obj : error LNK2001: unresolved external symbol "public: static class sf::RenderStates const sf::RenderStates::Default" (?Default@RenderStates@sf@@2V12@B)
+     1>main.obj : error LNK2019: unresolved external symbol "public: float __thiscall sf::Time::asSeconds(void)const " (?asSeconds@Time@sf@@QBEMXZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::Clock::Clock(void)" (??0Clock@sf@@QAE@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: class sf::Time __thiscall sf::Clock::getElapsedTime(void)const " (?getElapsedTime@Clock@sf@@QBE?AVTime@2@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: class sf::Time __thiscall sf::Clock::restart(void)" (?restart@Clock@sf@@QAE?AVTime@2@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::String::String(char const *,class std::locale const &)" (??0String@sf@@QAE@PBDABVlocale@std@@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (??0VideoMode@sf@@QAE@III@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Window::close(void)" (?close@Window@sf@@QAEXXZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall sf::Window::isOpen(void)const " (?isOpen@Window@sf@@QBE_NXZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall sf::Window::pollEvent(class sf::Event &)" (?pollEvent@Window@sf@@QAE_NAAVEvent@2@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Window::display(void)" (?display@Window@sf@@QAEXXZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::RenderTarget::clear(class sf::Color const &)" (?clear@RenderTarget@sf@@QAEXABVColor@2@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (??0RenderWindow@sf@@QAE@VVideoMode@1@ABVString@1@IABUContextSettings@1@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (??1RenderWindow@sf@@UAE@XZ) referenced in function _main
+     1>main.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::White" (?White@Color@sf@@2V12@B)
+     1>C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\Debug\TavernkeeperPrototype.exe : fatal error LNK1120: 22 unresolved externals
+     1>Done Building Project "C:\Users\Andy\Desktop\UCSC\CMPM 170\TavernkeeperPrototype-\TavernkeeperPrototype\TavernkeeperPrototype\TavernkeeperPrototype.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.44
+Time Elapsed 00:00:00.78

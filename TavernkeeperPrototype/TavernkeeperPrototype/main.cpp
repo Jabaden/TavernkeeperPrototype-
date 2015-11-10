@@ -1,24 +1,30 @@
 #include <SFML/Graphics.hpp>
-#include "Drink.h"
 #include "DrinkDeck.h"
+#include "DrinkSelector.h"
 #include <iostream>
 #include <ostream>
 #include <fstream>
 #include <time.h>
+#include "GameVariables.h"
 using namespace std;
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(800, 800), "SFML works!");
-	Drink* testDrink = new Drink();
+	std::srand(unsigned(std::time(0)));
+	sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML works!");
 	string testArray[2];
 	testArray[0] = "test1";
 	testArray[1] = "test2";
-
 	DrinkCard testCard("ayy", "lmao", testArray);
 	sf::Clock testClock;
-	DrinkDeck test;
-	
+	DrinkDeck* test = new DrinkDeck();
+	test->shuffleDeck();
+	test->drawCard();
 
+	//Drink* testDrink9 = new Drink(100,100);
+	//int hello = testDrink9->getYpos();
+
+	DrinkSelector* drinkSelectorTest = new DrinkSelector();
+	drinkSelectorTest->raiseDrink();
 	//FILE I/O 
 
 	while (window.isOpen())
@@ -31,10 +37,12 @@ int main()
 		}
 		if (testClock.getElapsedTime().asSeconds() > 2){
 			testClock.restart();
-			testCard.pickRandomAttribute();
+			//testCard.pickRandomAttribute();
 		}
 		window.clear(sf::Color::White);
-		testDrink->render(&window);
+		//testDrink->render(&window);
+		//testDrink9->render(&window);
+		drinkSelectorTest->render(&window);
 		window.display();
 	}
 
